@@ -85,4 +85,27 @@ if(i%2==0){
 }
 
 
+//Encontrar un número del 1 al 100 elegido por el usuario
+
+function akinatorDelUnoAlCien() {
+    let inicio=1;
+    let final=100;
+    let mitad;
+    while(final >= 1 && inicio <101){
+        mitad = inicio + Math.floor((final-inicio)/2);
+        if(confirm("Tu número es "+mitad+"?")){
+            return mitad;
+        }            
+        if(confirm("Tu número es mayor a "+mitad+"?")){
+            inicio = mitad + 1;    
+        }                
+        else{
+            final = mitad - 1;    
+        }        
+    }
+  return -1;
+}
+let vaca = akinatorDelUnoAlCien();
+console.log("Tu número es "+vaca);
+
 
