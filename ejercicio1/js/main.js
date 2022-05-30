@@ -84,7 +84,6 @@ if(i%2==0){
     console.log("Tu número final final",i," no es par");
 }
 
-
 //Encontrar un número del 1 al 100 elegido por el usuario
 
 function akinatorDelUnoAlCien() {
@@ -93,10 +92,10 @@ function akinatorDelUnoAlCien() {
     let mitad;
     while(final >= 1 && inicio <101){
         mitad = inicio + Math.floor((final-inicio)/2);
-        if(confirm("Tu número es "+mitad+"?")){
+        if(confirm("¿Tu número es "+mitad+"?")){
             return mitad;
         }            
-        if(confirm("Tu número es mayor a "+mitad+"?")){
+        if(confirm("¿Tu número es mayor a "+mitad+"?")){
             inicio = mitad + 1;    
         }                
         else{
